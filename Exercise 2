@@ -19,6 +19,7 @@ public class DistCalc {
 		
 		System.out.println("This program will calulate the distance between"
 				+ " coordinates (x1, y1) and (x2, y2) ");
+		// Prompts the user of the format for the coordinates
 		
 		 System.out.print("Please enter cordinate x1: ");
 		 x1 = scan.nextInt();
@@ -38,14 +39,15 @@ public class DistCalc {
 		 System.out.println(" The second coordinate is (" + x2 + ", " + y2 + ")");
 		 // will display the second coordinate as entered by the user
 		 
-		 double dist;
+		 double dist; //
 		 
 		 dist = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+		 // Formula for distance is √((x2 - x1)^2 + (y2 - y1)^2 )
 		 DecimalFormat fmt = new DecimalFormat("0.###");
 		 System.out.println(" The distance between the two coordinates: " + 
-				 fmt.format(dist));
+				 fmt.format(dist)); // result is formatted to 3 decimal places
 		 
-		 
+		 scan.close(); 
 
 	}
 
