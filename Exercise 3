@@ -1,0 +1,53 @@
+
+//**************************************************************************************
+//
+// UserNames.java		Author: White, Joshua-Josef
+//
+// 	Based on user-entered info, generates output composed of the first 4 letters of the 
+//	user's last name, followed by the first letter of the user's first name, 
+//	followed by a random number in the range of 10 to 99 (inclusive)
+//
+//**************************************************************************************
+
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class UserNames {
+
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		
+		String firstname, lastname;
+		
+		System.out.print("Enter First Name : ");
+		 firstname = scan.nextLine();
+		 
+		 System.out.print("Enter Last Name : ");
+		 lastname = scan.nextLine();
+		 
+		 //	System will read and store the first and last name
+		 //	as entered by the user
+		 
+		 int usernum; 
+		 
+		 
+		 Random generator = new Random();
+			usernum = generator.nextInt (99) + 10;
+			
+			 //	System will randomly generate a number in the range of 10 to 99
+			 //	for each user
+			
+		System.out.print("User information is as follows: " + 
+		lastname.substring(0,4) + ", " + firstname.substring(0,1) + 
+		", " + usernum);
+		
+		//	Output will be in the format "First 4 letters of last name, first initial, 
+		//	user number"
+		
+		scan.close();
+
+	}
+
+}
