@@ -1,0 +1,57 @@
+
+
+//**************************************************************************************
+//
+// AgeGuess.java		Author: White, Joshua-Josef
+//
+//  Allows the user to enter in the name of an individual and record a guess of
+//  that individual's age. The program will then generate the correct answer and 
+//	display it alongside the user's guess and the name of the individual
+//
+//**************************************************************************************
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class AgeGuess {
+
+	public static void main(String[] args) {
+		
+		String name;
+		
+		int ageGuess;
+		 Scanner scan = new Scanner(System.in);
+		 
+		 System.out.print("Enter a name here: ");
+		 name = scan.nextLine();
+		 
+		 System.out.print("Enter your age Guess here in years: ");
+		 ageGuess = scan.nextInt();
+		 
+		 // Code above will prompt the user to enter in the name of the individual
+		 //	and a guess of that individual's age as an integer
+		 
+		 System.out.println("The name you entered is " + name);
+		 System.out.println("The age you guessed for " + name + " is " + ageGuess
+				  + " years old" );
+		 
+		 //	Code above will record the user responses to define the variables and
+		 //	output those responses for the user to see
+		 
+		
+	int age; 
+	
+	Random generator = new Random();
+	age = generator.nextInt (100) + 1;
+	// The system will generate a random number between 0 and 100 as the correct answer
+		
+	System.out.println("The correct age of this person is " + age); 
+	
+	// System will display the name and age the user guessed along with the correct age
+		 
+		 scan.close(); // Closing the scanner
+		 
+		
+	}
+
+}
