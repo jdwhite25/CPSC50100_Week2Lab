@@ -1,0 +1,26 @@
+
+//**************************************************************************************
+//
+// FloatEqu.java		Author: White, Joshua-Josef
+// 
+// Initializes two variables and determines if the values are  approximately equal
+//
+//**************************************************************************************
+
+
+
+public class FloatEqu {
+
+	private static final double TOLERANCE = 0.000001;
+
+	public static void main(String[] args) {
+	
+		double var1 = (1.0/10) * (1.0/10);
+		double var2 = (1.0/100);
+		
+		if (Math.abs(var1 - var2) < TOLERANCE)
+			System.out.println ("Approximately equal");
+		
+	}
+
+}
