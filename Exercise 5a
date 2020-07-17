@@ -1,0 +1,26 @@
+
+//**************************************************************************************
+//
+// FloatEqu.java		Author: White, Joshua-Josef
+// 
+// Initializes two variables and determines if the values are equal
+//
+//**************************************************************************************
+
+
+
+public class FloatEqu {
+
+	public static void main(String[] args) {
+	
+		double var1 = (1.0/10) * (1.0/10);
+		double var2 = (1.0/100);
+		
+		if (var1 == var2)
+			System.out.print("EQUAL");
+		else
+			System.out.print("NOT EQUAL");
+
+	}
+
+}
