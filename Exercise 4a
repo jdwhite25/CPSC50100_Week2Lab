@@ -8,7 +8,7 @@
 //  that individual's age. The program will then generate the correct answer and 
 //	display it alongside the user's guess and the name of the individual
 //
-//	
+//	System will display messages to the user if the answer is incorrect
 //
 //**************************************************************************************
 
