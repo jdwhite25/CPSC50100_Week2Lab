@@ -21,19 +21,19 @@ public class DistCalc {
 				+ " coordinates (x1, y1) and (x2, y2) ");
 		// Prompts the user of the format for the coordinates
 		
-		 System.out.print("Please enter cordinate x1: ");
+		 System.out.print("Please enter coordinate x1: ");
 		 x1 = scan.nextInt();
 		 
-		 System.out.print("Please enter cordinate y1: ");
+		 System.out.print("Please enter coordinate y1: ");
 		 y1 = scan.nextInt();
 		 
 		 System.out.println("The first coordinate is (" + x1 + ", " + y1 + ")");
 		 // will display the first coordinate as entered by the user
 		 
-		 System.out.print("Please enter cordinate x2: ");
+		 System.out.print("Please enter coordinate x2: ");
 		 x2 = scan.nextInt();
 		 
-		 System.out.print("Please enter cordinate y2: ");
+		 System.out.print("Please enter coordinate y2: ");
 		 y2 = scan.nextInt();
 		 
 		 System.out.println(" The second coordinate is (" + x2 + ", " + y2 + ")");
